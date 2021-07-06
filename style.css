@@ -19,6 +19,7 @@ body{
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+/* > */
 .pseudo_container
 {
     display: flex;
