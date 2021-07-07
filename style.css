@@ -4,6 +4,8 @@
 ::after{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    cursor: default;
+    /* zoom: 99%; */
 }
 img
 {
@@ -21,24 +23,24 @@ body{
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
-.scroll_container
+/* .scroll_container
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-end;
     min-height: 100vh;
     max-height: 100vh;
     min-width: 100vw;
     z-index: 0;
-}
-.pseudo_container
+} */
+/* .pseudo_container
 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}
+} */
 .container
 {
     background-image: url('./assets/background.png');
@@ -171,11 +173,13 @@ header
     top: 12%;
     left: 50%;
     transform: translateX(-50%);    
-    min-width: 20vw;
+    min-height: 86vh;
+    max-height: 86vh;
+    min-width: 100vw;
     max-width: 100vw;
     z-index: 1;
-    border: 2px solid greenyellow;
     order: 1;
+    border: 2px solid greenyellow;
 }
 .about
 {   
@@ -183,7 +187,8 @@ header
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
 }
 .about_text
 {
@@ -217,26 +222,143 @@ header
 .projects-gallery
 {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
     top: 12%;
     left: 150%;
-    transform: translateX(-50%);    
+    transform: translateX(-50%);
+    min-height: 86vh;
+    max-height: 86vh;
     min-width: 100vw;
     max-width: 100vw;
     z-index: 1;
     border: 2px solid purple;
+    padding: 2rem 0rem;
 }
-.flex_container
+.project_title 
 {
+    margin: 1.5rem 0rem 0rem 0rem;
+    font-weight: 400;
+    font-size: 2.7em;
+}
+.flex_container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-repeat: no-repeat;
     flex-wrap: nowrap;
-    height: 27rem;
-    width: 15rem;
-    min-width: 20vw;
-    max-width: 100vw;
-    margin: 20px;
+    /* overflow: hidden; */
+    justify-content: center;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    height: 49vh;
+    min-width: 95vw;
+    max-width: 95vw;
     border: 2px solid red;
 }
+.carousel
+{
+    perspective: 500px;
+    transform-style: preserve-3d;
+    transform-origin: 0% 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.project_card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    width: 26rem;
+    border-radius: 0.25em;
+    opacity: 1 !important;
 
+}
+.project_name
+{
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    font-size: 1.25rem;
+    margin: 2rem 0rem 0rem 0rem;
+}
+.link_arrow_height
+{
+    height: 0.75rem;
+    margin-left: 0.2rem;
+}
+/* .calculator:hover
+{
+    transition: all 0.2s ease;
+    color: rgb(255, 196, 0);
+    cursor: default;
+} */
+.calculator-card
+{
+    visibility: visible;
+    transform: translateX(394px) translateY(100px) translateX(0px) translateX(0px) translateZ(0px);
+}
+.b
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem;
+    font-size: .7rem;
+    letter-spacing: 0.101em;
+    border-radius: 0.25em;
+    padding: 0.55rem;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.calculator_button
+{
+    border: 1px solid rgb(255, 196, 0);
+}
+.b:hover
+{
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+.duckHunt-card
+{
+    transform: translateX(394px) translateY(100px) translateX(362px) translateZ(-200px);
+    z-index: -1;
+    opacity: 0.6;
+    visibility: visible;
+}
+.duckHunt_button
+{
+    border: 1px solid rgb(0, 174, 255);
+}
+.HypnoHour-card
+{
+    transform: translateX(394px) translateY(100px) translateX(824px) translateZ(-400px);
+    z-index: -2;
+    opacity: 0.2;
+    visibility: visible;
+}
+.hypnoHour, .znakeGame
+{
+    border: 1px solid rgb(192, 192, 192);
+}
+.znakeGame-card
+{
+    transform: translateX(394px) translateY(100px) translateX(-824px) translateZ(-400px);
+    z-index: -2;
+    opacity: 0.2;
+    visibility: visible;
+}
+.frontend-card
+{
+    transform: translateX(394px) translateY(100px) translateX(-362px) translateZ(-200px);
+    z-index: -1;
+    opacity: 0.6;
+    visibility: visible;
+}
+.devsnest
+{
+    border: 1px solid rgb(157, 114, 214);
+}
