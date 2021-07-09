@@ -17,7 +17,7 @@ body{
     padding: 0%;
     overflow-x: scroll;
     overflow-y: hidden;    
-    background-image: url('./assets/background.png'); 
+    background-image: url('./assets/imagez/background.png'); 
     background-color:black;
     background-repeat: repeat;
     color: white;
@@ -43,7 +43,7 @@ body{
 } */
 .container
 {
-    background-image: url('./assets/background.png');
+    background-image: url('./assets/imagez/background.png');
     display: flex;
     flex-direction: column;
     border: 2px solid white;
@@ -138,20 +138,20 @@ body{
 }
 .linkedin
 {
-    background-image: url('./assets/linkedin.png');
+    background-image: url('./assets/imagez/linkedin.png');
 }
 .github
 {
-    background-image: url('./assets/github.png');
+    background-image: url('./assets/imagez/github.png');
     
 }
 .leetcode
 {
-    background-image: url('./assets/leetcode.png');
+    background-image: url('./assets/imagez/leetcode.png');
 }
 .youtube
 {
-    background-image: url('./assets/youtube.png');
+    background-image: url('./assets/imagez/youtube.png');
 }
 .header_banner
 {
@@ -294,11 +294,11 @@ header
     color: rgb(255, 196, 0);
     cursor: default;
 } */
-.calculator-card
+/* .calculator-card
 {
     visibility: visible;
     transform: translateX(394px) translateY(100px) translateX(0px) translateX(0px) translateZ(0px);
-}
+} */
 .b
 {
     display: flex;
@@ -322,29 +322,29 @@ header
     transition: all 0.3s ease;
     transform: scale(1.05);
 }
-.duckHunt-card
+/* .duckHunt-card
 {
     transform: translateX(394px) translateY(100px) translateX(362px) translateZ(-200px);
     z-index: -1;
     opacity: 0.6;
     visibility: visible;
-}
+} */
 .duckHunt_button
 {
     border: 1px solid rgb(0, 174, 255);
 }
-.HypnoHour-card
+/* .HypnoHour-card
 {
     transform: translateX(394px) translateY(100px) translateX(824px) translateZ(-400px);
     z-index: -2;
     opacity: 0.2;
     visibility: visible;
-}
+} */
 .hypnoHour, .znakeGame
 {
     border: 1px solid rgb(192, 192, 192);
 }
-.znakeGame-card
+/* .znakeGame-card
 {
     transform: translateX(394px) translateY(100px) translateX(-824px) translateZ(-400px);
     z-index: -2;
@@ -357,7 +357,7 @@ header
     z-index: -1;
     opacity: 0.6;
     visibility: visible;
-}
+} */
 .devsnest
 {
     border: 1px solid rgb(157, 114, 214);
