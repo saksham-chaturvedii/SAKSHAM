@@ -10,18 +10,17 @@
 </head>
 <body>   
     
-    <div class="pseudo_container">
         <nav class="container"> 
-            <div class="image">
+            <a href="#division" class="image">
                 <img src="./assets/imagez/logo.png" alt="logo image" draggable="false">
-            </div>
+            </a>
 
             <div class="redirect_sections ">
-                <div class="resume" >RESUME</div>
+                <a href="./assets/resume.pdf" download class="resume" >RESUME</a>
                 <div class="star">*</div>
-                <div class="p_gallery">PROJECTS GALLERY</div>
+                <a href="#projects-gallery" class="p_gallery">PROJECTS GALLERY</a>
                 <div class="star">*</div>
-                <div class="publi pseudo-margin">PUBLICATIONS</div>
+                <a href="#publication" class="publi pseudo-margin">CONTRIBUTIONS</a>
                 <div class="star">*</div>
                 <div class="contact">CONTACT</div>
             </div>
@@ -36,80 +35,129 @@
                 <a href="https://www.youtube.com/channel/UCSHDy1acw7-2UHcbl94h4NQ" target="_blank" class=" youtube"></a>
             </div>
         </nav>
-        <header class="header_banner">
-            <img src="./assets/imagez/header-top-banner.png" alt="header banner" draggable="false">
-        </header> 
-    </div>
+<div class="fixed">
 
-    <div class="scroll_container">
-        <section class="division">
-            <div class="about"> 
-            <!-- might add float to the image also -->
-                <div class="about_text font_style about_text_float">
+        <header class="header_banner">
+            <img src="./assets/imagez/header-top-banner.png" alt="header banner" draggable="false" >
+        </header> 
+
+        <section id="division">
+            <div class="about "> 
+                <div class="about_text about_text_float">
 
                     <div class="name">Saksham Chaturvedi</div>
-
-                    <div class="job-title">- FRONTEND WEB DEVELOPER</div>
-
-                    <div class="techstack techstack_float">
-                        <img src="./assets/imagez/html3.png" alt=""><img src="" alt=""><img src="./assets/imagez/css1.png" alt="">
-                        <img src="./assets/imagez/js1.png" alt="JavaScript">
+                      <div class="job-title"> 
+                        FRONTEND WEB DEVELOPER 
                     </div>
 
+                    <div>
+                        <img src="./assets/imagez/html3.png" alt=""class="techstack">
+                        <img src="./assets/imagez/css1.png" alt=""class="techstack">
+                        <img src="./assets/imagez/js1.png" alt="JavaScript" class="techstack">
+                        <br>
+                    </div>
+                    <img src="./assets/imagez/cpp.png" alt="CPP" class="techstack">
+
                     <p>
-                        I'm a third year Computer  Science Undergraduate and...
-                        
-                        I like to know about stuff related to web development, self improvement and anything
+                        Hi!<br>I'm a 3rd year Computer Science Undergraduate and am currently focussed on building my web development and problem solving skills.
+                    </p>
+                    <p>
+                        As for my creative side, I find myself inclined towards music and artists including Russ & Zayn Malik, who inspire me in manifold ways; Consequently, I deeply appreciate music for helping me grow mentally & as an individual being.
                     </p>
                 </div>
 
                 <div class="profile">
                     <img src="./assets/imagez/profile.jpg" alt="">
                 </div>
+                <div class="timeline about_text_float">
+                
+                        <img src="./assets/imagez/amazon-icon.svg" alt="" style=" position: relative; top: 12%;">
+                        <div class="goal">
+                            My 2021 is all directed towards my goal of interning as an SDE at Amazon in 2022.
+                            <p>
+                                Why?<br> "Company se MacBook chahiye yaar :p"
+                            </p>
+                                
+                        </div>
+                </div>
             </div>
         </section>    
 
-        <section class="projects-gallery">
-            <div class="project_title name"> ~ DA PROJECT WALL ~</div>
+        <section id="projects-gallery">
+            <div class="project_title name">PROJECTZ</div>
             
             <div class="flex_container">
                     <div class="clip">
                         <div class="video-card-box">
-                            <img src="./assets/imagez/devsnestsvg.svg" alt="" style="padding: 4rem; margin-top: -4rem;">
+                            <img src="./assets/imagez/devsnest.svg" alt="" style="padding: 4rem; margin-top: -4rem;">
                             <div class="project_name">DEVSNEST FRONTEND PROJECTS</div>
-                            <button class="b devsnest">CHECK OUT<img src="/assets/imagez/devsnest-button.png" alt="" class="link_arrow_height"></button>
+                            <a href="https://github.com/saksshham/Frontend-2.0" target="_blank" class="b devsnest">CHECK OUT<img src="/assets/imagez/devsnest-button.png" alt="" class="link_arrow_height"></a>
                         </div>
 
                         <div class="video-card-box">
                             <video autoplay loop muted src="./assets/clipz/duck-hunt.mkv" style="margin-top: -4rem"></video>
                             <div class="project_name">DUCK HUNT GAME</div>
-                            <button class="b duckHunt_button">PLAY<img src="/assets/imagez/duckHunt-button.png" alt="" class="link_arrow_height"></button>
+                            <a href="https://saksshham.github.io/DuckDuckGone/" target="_blank" class="b duckHunt_button">PLAY<img src="/assets/imagez/duckHunt-button.png" alt="" class="link_arrow_height"></a>
                         </div>
                         
                         <div class="video-card-box">
                             <video autoplay loop muted  src="./assets/clipz/calculator2.mp4" style="margin-right: -2rem; background-color: white;"></video>
                             <div class="project_name">iPhone CALCULATOR</div>
-                            <button class=" b calculator_button">DO THE MATH <img src="/assets/imagez/calc-button.png" alt="" class="link_arrow_height"></button>
+                            <a href="https://saksshham.github.io/Do-The-Math/" target="_blank"  class=" b calculator_button">DO THE MATH <img src="/assets/imagez/calc-button.png" alt="" class="link_arrow_height"></a>
                         </div>
                         
                         <div class="video-card-box">
                             <video autoplay loop muted src="./assets/clipz/hypnosis.mkv"></video>
                             <div class="project_name">HYPNO HOUR</div>
-                            <button class="b hypnoHour">CHECK OUT<img src="/assets/imagez/hypnoHour-button.png" alt="" class="link_arrow_height"></button>
+                            <a href="https://saksshham.github.io/Hypno-Hour/"  target="_blank" class="b hypnoHour">CHECK OUT<img src="/assets/imagez/hypnoHour-button.png" alt="" class="link_arrow_height"></a>
                         </div>
 
                         <div class="video-card-box">
                             <video autoplay loop muted src="./assets/clipz/book-em.mkv"></video>
                             <div class="project_name">Book 'em</div>
-                            <button class="b book-em"> BOOK <img src="/assets/imagez/bookem.png" alt="" class="link_arrow_height"></button>
+                            <a href="https://saksshham.github.io/Book-em/"  target="_blank" class="b book-em"> BOOK <img src="/assets/imagez/bookem.png" alt="" class="link_arrow_height"></a>
+                        </div>
+
+                        <div class="video-card-box">
+                            <video autoplay loop muted src="./assets/clipz/checkbox.mp4"></video>
+                            <div class="project_name">Checkbox Fiddle</div>
+                            <a href="https://saksshham.github.io/Checkbox-Fiddle/" target="_blank"  class="b checkbox-fiddle"> FIDDLE <img src="/assets/imagez/checkbox-button.png" alt="" class="link_arrow_height"></a>
                         </div>
                     </div>
             </div>
         </section>
-        
+
+        <section id="publication"> 
+            <div class="project_title name">CONTRIBUTIONZ</div>
+
+            <div class="column-container">
+                <img src="./assets/imagez/book.png" class="video-card-box book-img" style="margin: 0rem;" alt="">
+                <div class="text">
+
+                    <h2>Artificial Intelligence for Accurate Analysis and Detection of Autism Spectrum Disorder
+                    </h2>
+
+                    <div class="book-chapter-author"> 
+                        IGI-GLOBAL | BOOK CHAPTER AUTHOR 
+                    </div>
+
+                    <div class="book-description">
+                        Contributed towards writing the book chapter - <a href="./assets/book-chapter.pdf" download class="book-chapter">“Mouse-less Cursor Control for Quadriplegic and Autistic patients using Artificial Intelligence”</a>, as an individual author for the aforementioned book. 
+                        <div>
+                            The chapter discusses the early detection and diagnosis of the Autism Spectrum Disorder through Artificial Intelligence and its attributes including Deep Learning and Machine Learning, for confirming diagnosis or suggesting the need for further evaluation of individuals. The chapter also discuss the use of medical robots, for enhancing the communication, social and emotional skills of children who have been diagnosed with ASD. 
+                        </div>
+                        <div>
+                            The chapter has been accepted by the Head Editor, will be included in the book and published soon.
+                        </div>
+                        <a href="https://www.igi-global.com/book/artificial-intelligence-accurate-analysis-detection/264137" target="_blank" class="b devsnest" ">REDIRECT TO IGI GLOBAL<img src="/assets/imagez/devsnest-button.png" alt="" class="link_arrow_height"></a>
+                    </div>
+                </div>
+            </div>
+        </section>  
 </div>
+<script src="script.js"></script>
 
-<!-- </div> -->
-
+});
+</script>
 </body>
 </html>

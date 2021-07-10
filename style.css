@@ -5,7 +5,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     cursor: default;
-    /* zoom: 99%; */
 }
 img
 {
@@ -15,7 +14,7 @@ img
 body{
     margin: 0%;
     padding: 0%;
-    overflow-x: scroll;
+    overflow-x: scroll; 
     overflow-y: hidden;    
     background-image: url('./assets/imagez/background.png'); 
     background-color:black;
@@ -23,24 +22,10 @@ body{
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
-/* .scroll_container
+body::-webkit-scrollbar, .flex_container::-webkit-scrollbar
 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-end;
-    min-height: 100vh;
-    max-height: 100vh;
-    min-width: 100vw;
-    z-index: 0;
-} */
-/* .pseudo_container
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-} */
+    display: none;
+}
 .container
 {
     background-image: url('./assets/imagez/background.png');
@@ -54,12 +39,14 @@ body{
     position: fixed;
     z-index: 99;
 }
+
 .image
 {   
     display: flex;
     align-self: center;
     padding: 12px 12px;
     border-bottom: 2px solid white;
+    cursor: pointer;
 }
 .redirect_sections
 {
@@ -75,12 +62,13 @@ body{
     display: flex;
     padding: .75rem 0;
     transform: rotate(-90deg);
-    /* transition: all 0.2s ease; */
     font-size: .6875rem;
     text-align: center;
     letter-spacing: 0.12em;
     margin: 14px 0px;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 .resume:hover
 {
@@ -161,16 +149,19 @@ body{
     min-width: 100vw;
     position: fixed;
     z-index: 0;
+    
 }
 header
 {
     position: sticky;
     top: 4%;
+    
 }
-.division
+
+#division
 {
     position: absolute;
-    top: 12%;
+    top: 23%;
     left: 50%;
     transform: translateX(-50%);    
     min-height: 86vh;
@@ -178,17 +169,16 @@ header
     min-width: 100vw;
     max-width: 100vw;
     z-index: 2;
-    order: 1;
-    border: 2px solid greenyellow;
 }
 .about
 {   
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
     min-width: 100vw;
     max-width: 100vw;
+
 }
 .about_text
 {
@@ -211,15 +201,53 @@ header
     font-size: 1.5em;
     margin-bottom: 0.75rem;
 }
+
+.techstack:hover
+{
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+}
 .profile
 {
     align-items: center;
     align-self: flex-start;
     background-repeat: no-repeat;
-    height: 27rem;
-    width: 15rem;
+    height: 29rem;
+    width: 17rem;
 }
-.projects-gallery
+.timeline
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    width: 22rem;
+    margin-right: 2rem;
+}
+.goal
+{
+    font-size: 1rem;
+    line-height: 1.2em;
+}
+.company-logo-size
+{
+    height: 6rem;
+    width: 5rem;
+}
+.about_text_float
+{
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 5px); }
+    to   { transform: translate(0, -0px); }    
+}
+#projects-gallery
 {
     position: absolute;
     display: flex;
@@ -231,9 +259,8 @@ header
     transform: translateX(-50%);
     min-height: 86vh;
     max-height: 86vh;
-    width: 217vh;
+    width: 98vw;
     z-index: 1;
-    border: 2px solid purple;
     padding: 2rem 2rem;
 }
 .project_title 
@@ -241,6 +268,7 @@ header
     margin: 1.5rem 0rem 0rem 0rem;
     font-weight: 400;
     font-size: 2.7em;
+    z-index: 2;
 }
 .flex_container {
     display: flex;
@@ -251,11 +279,9 @@ header
     align-items: center;
     min-width: 100%;
     max-width: 100%;
-    border: 2px solid red;
     z-index: 1;
     width: 100%;
     padding: 0rem 0rem 3rem 0rem;
-
 }
 .project_name
 {
@@ -282,6 +308,7 @@ header
     background: transparent;
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
 .calculator_button
 {
@@ -292,17 +319,14 @@ header
     transition: all 0.3s ease;
     transform: scale(1.05);
 }
-
 .duckHunt_button
 {
     border: 1px solid rgb(0, 174, 255);
 }
-
 .hypnoHour, .znakeGame
 {
     border: 1px solid rgb(192, 192, 192);
 }
-
 .devsnest
 {
     border: 1px solid rgb(157, 114, 214);
@@ -310,7 +334,10 @@ header
 .book-em
 {
     border: 1px solid rgb(150, 75, 0);
-
+}
+.checkbox-fiddle
+{
+    border: 1px solid rgb(224, 0, 0);
 }
 video
 {
@@ -330,5 +357,74 @@ video
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px dotted rebeccapurple;
+}
+#publication
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    top: 12%;
+    left: 240%;
+    transform: translateX(-50%);
+    min-height: 86vh;
+    max-height: 86vh;
+    width: 79vw;
+    padding: 2rem 0rem;
+}
+.column-container
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 100%;
+    max-width: 100%;
+    z-index: 2;
+    width: 100%;
+    margin: 0rem 4rem;
+    padding: 2rem 2rem 4rem 4rem;
+}
+.book-img
+{
+    align-self: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    width: 53.5rem;
+}
+h2 
+{
+    margin: 0.2em 0em;
+}
+.book-chapter
+{
+    text-decoration: none;
+    color: white;
+}
+
+.book-chapter:hover
+{
+    color: rgb(157, 114, 214);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.book-chapter-author
+{
+    display: flex;
+    justify-content: flex-end;
+    color: aquamarine;
+    width: 50.5rem;
+}
+
+.book-description
+{
+    margin-top: 2rem;
+    word-spacing: 3px;
+    line-height: 29px;
+    width: 50.5rem;
 }
