@@ -26,6 +26,13 @@ body::-webkit-scrollbar, .flex_container::-webkit-scrollbar
 {
     display: none;
 }
+.fixed
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 .container
 {
     background-image: url('./assets/imagez/background.png');
@@ -169,6 +176,7 @@ header
     min-width: 100vw;
     max-width: 100vw;
     z-index: 2;
+    order: 1;
 }
 .about
 {   
@@ -262,6 +270,7 @@ header
     width: 98vw;
     z-index: 1;
     padding: 2rem 2rem;
+    order: 2;
 }
 .project_title 
 {
@@ -366,12 +375,13 @@ video
     align-items: center;
     flex-wrap: nowrap;
     top: 12%;
-    left: 240%;
+    left: 243.5%;
     transform: translateX(-50%);
     min-height: 86vh;
     max-height: 86vh;
-    width: 79vw;
+    width: 100vw;
     padding: 2rem 0rem;
+    order: 3;
 }
 .column-container
 {
