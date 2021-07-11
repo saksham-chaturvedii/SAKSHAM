@@ -3,7 +3,7 @@ This repository contained files related to creating my first portfolio website. 
 
 Futute Add-ons include:
 
--> Add Custom scrollbars.
--> Set default Mouse Wheel Scroll to horizontal.
--> Scaling of elements for different screen resolutions i.e implementation of media queries.
+-> Add Custom scrollbars. <br>
+-> Set default Mouse Wheel Scroll to horizontal. <br>
+-> Scaling of elements for different screen resolutions i.e implementation of media queries. <br>
 
