@@ -8,3 +8,8 @@ Futute Add-ons include:
 -> Adding Custom scrollbars. <br>
 -> Setting default Mouse Wheel Scroll to horizontal. <br>
 -> Scaling of elements for different screen resolutions i.e implementation of media queries. <br>
+
+
+https://user-images.githubusercontent.com/81289215/125508994-b790ee3d-4ef4-4b95-bc02-74851abe73ac.mp4
+
+
