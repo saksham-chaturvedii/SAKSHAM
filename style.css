@@ -46,7 +46,6 @@ body::-webkit-scrollbar, .flex_container::-webkit-scrollbar
     position: fixed;
     z-index: 99;
 }
-
 .image
 {   
     display: flex;
