@@ -5,8 +5,8 @@ Unlike in the repository https://github.com/saksshham/SAKSHAM-1.0, here I've use
 
 Futute Add-ons include:
 
--> Add Custom scrollbars. <br>
--> Set default Mouse Wheel Scroll to horizontal. <br>
+-> Adding Custom scrollbars. <br>
+-> Setting default Mouse Wheel Scroll to horizontal. <br>
 -> Scaling of elements for different screen resolutions i.e implementation of media queries. <br>
 
 https://user-images.githubusercontent.com/81289215/125202533-9f8ec000-e291-11eb-8a39-bf8091482585.mp4
