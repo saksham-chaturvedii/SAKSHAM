@@ -207,7 +207,7 @@ header
     align-items: flex-end;
     margin-right: 2rem;
     order: 0;
-    margin-left: 5rem;
+    margin-left: 9.5rem;
     width: 41.5rem;
 }
 .name
@@ -248,9 +248,9 @@ header
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-left: 5rem;
+    margin-left: 3rem;
     width: 26rem;
-    margin-right: 2rem;
+    margin-right: 5rem;
 }
 .goal
 {
