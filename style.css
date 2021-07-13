@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: default;
+}
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: scroll; 
+    overflow-y: hidden;    
+    background-image: url('./assets/imagez/background.png'); 
+    background-color:black;
+    background-repeat: repeat;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+body::-webkit-scrollbar, .flex_container::-webkit-scrollbar
+{
+    display: none;
+}
+.fixed
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.container
+{
+    background-image: url('./assets/imagez/background.png');
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-left: 0;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 2.85rem;
+    position: fixed;
+    z-index: 99;
+}
+.image
+{   
+    display: flex;
+    align-self: center;
+    padding: 12px 12px;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+.redirect_sections
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .6875rem;
+    padding: 0.7rem 0rem;
+    border-bottom: 2px solid white;
+}
+.resume, .p_gallery, .contact, .publi
+{
+    display: flex;
+    padding: .75rem 0;
+    transform: rotate(-90deg);
+    font-size: .6875rem;
+    text-align: center;
+    letter-spacing: 0.12em;
+    margin: 14px 0px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.resume:hover
+{
+    transition: all 0.2s ease;
+    color: red;
+}
+.p_gallery:hover
+{
+    transition: all 0.2s ease;
+    color: rgb(255, 255, 0);
+} 
+.contact:hover
+{
+    transition: all 0.2s ease;
+    color:rgb(255, 0, 255);
+}
+.publi:hover
+{
+    transition: all 0.2s ease;
+    color:rgb(0, 255, 21);
+}
+.highlight
+{
+    color:rgb(255, 0, 76);
+}
+.star
+{
+    margin: 0.8rem 0px;
+}
+.pseudo-margin
+{
+    padding: 2rem 0rem;
+}
+.social_logos
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:; */
+    align-items: center;
+    font-size: .6875rem;
+    padding: 0.85rem 0;
+}
+.linkedin, .github, .leetcode, .youtube, .gmail
+{
+    display: block;
+    padding: .75rem 0;
+    transition: all 0.3s ease;
+    font-size: .6875rem;
+    text-align: center;
+    letter-spacing: 0.12em;
+    margin: 9px 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.3rem;
+    cursor: pointer;
+}
+.linkedin:hover, .github:hover, .leetcode:hover, .youtube:hover, .gmail:hover
+{
+    transform: scale(1.4);
+}
+.linkedin
+{
+    background-image: url('./assets/imagez/linkedin.png');
+}
+.github
+{
+    background-image: url('./assets/imagez/github.png');
+    
+}
+.gmail
+{
+    background-image: url('./assets/imagez/gmail.png');
+
+}
+.leetcode
+{
+    background-image: url('./assets/imagez/leetcode.png');
+}
+.youtube
+{
+    background-image: url('./assets/imagez/youtube.png');
+}
+.header_banner
+{
+    display: flex;
+    justify-content:center;
+    align-self: flex-start;
+    min-width: 100vw;
+    position: fixed;
+    z-index: 0;
+}
+.header_banner::after
+{
+    background: linear-gradient(white 0%, black 40%);
+    z-index: 5;
+}
+header
+{
+    position: sticky;
+    top: 4%;
+}
+
+#division
+{
+    /* position: absolute; */
+    /* top: 30%; */
+    display: flex;
+    align-items: center;
+    min-height: 95vh;
+    /* max-height: 110vh; */
+    min-width: 100vw;
+    max-width: 100vw;
+    z-index: 2;
+    order: 1;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 100vw;
+    max-width: 100vw;
+    margin-top: 5rem;
+}
+.about_text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 2rem;
+    order: 0;
+    margin-left: 9.5rem;
+    width: 41.5rem;
+}
+.name
+{
+    font-weight: 400;
+    font-size: 3em;
+    margin-bottom: 0.75rem;
+    align-self: flex-start;
+}
+.name:hover
+{
+    transition: all 0.3s ease;
+    color: rgb(42, 165, 149);
+}
+.job-title
+{
+    font-size: 1.5em;
+    margin-bottom: 0.75rem;
+}
+
+.techstack:hover
+{
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+}
+.profile
+{
+    align-items: center;
+    align-self: flex-start;
+    background-repeat: no-repeat;
+    height: 35rem;
+    width: auto;
+}
+
+.timeline
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    width: 26rem;
+    margin-right: 5rem;
+}
+.goal
+{
+    font-size: 1rem;
+    line-height: 1.2em;
+}
+.company-logo-size
+{
+    height: 6rem;
+    width: 5rem;
+}
+.about_text_float
+{
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 5px); }
+    to   { transform: translate(0, -0px); }    
+}
+#projects-gallery
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    top: 12%;
+    left: 149%;
+    transform: translateX(-50%);
+    min-height: 86vh;
+    max-height: 86vh;
+    width: 98vw;
+    z-index: 1;
+    padding: 2rem 2rem;
+    order: 2;
+}
+.project_title 
+{
+    margin: 1.5rem 0rem 0.5rem 0rem;
+    font-weight: 400;
+    font-size: 2.7em;
+    z-index: 2;
+}
+.project_title:hover
+{
+    color: rgb(252, 255, 46);
+    transition: all 0.2s ease;
+}
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    width: 100%;
+    padding: 0rem 0rem 3rem 0rem;
+}
+.project_name
+{
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    font-size: 1.25rem;
+    margin: 2rem 0rem 0rem 0rem;
+}
+.link_arrow_height
+{
+    height: 0.75rem;
+    margin-left: 0.2rem;
+}
+.b
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem;
+    font-size: .7rem;
+    letter-spacing: 0.101em;
+    border-radius: 0.25em;
+    padding: 0.55rem;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.calculator_button
+{
+    border: 1px solid rgb(255, 196, 0);
+}
+.b:hover
+{
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+.duckHunt_button
+{
+    border: 1px solid rgb(0, 174, 255);
+}
+.hypnoHour, .znakeGame
+{
+    border: 1px solid rgb(192, 192, 192);
+}
+.devsnest
+{
+    border: 1px solid rgb(157, 114, 214);
+}
+.book-em
+{
+    border: 1px solid rgb(150, 75, 0);
+}
+.checkbox-fiddle
+{
+    border: 1px solid rgb(224, 0, 0);
+}
+.cli
+{
+    border: 1px solid rgb(0, 34, 97);
+}
+video
+{
+    height: 100%;
+}
+.clip
+{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0rem 2rem;
+}
+.video-card-box
+{
+    margin: 5rem 0rem;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cli-box
+{
+    height: 57vh;
+}
+#publication
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    top: 12%;
+    left: 243.5%;
+    transform: translateX(-50%);
+    min-height: 86vh;
+    max-height: 86vh;
+    width: 100vw;
+    padding: 2rem 0rem;
+    order: 3;
+}
+.column-container
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 100%;
+    max-width: 100%;
+    z-index: 2;
+    width: 100%;
+    margin: 0rem 4rem;
+    padding: 2rem 2rem 4rem 4rem;
+}
+.book-img
+{
+    align-self: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    width: 53.5rem;
+}
+h2 
+{
+    margin: 0.2em 0em;
+}
+.book-chapter
+{
+    text-decoration: none;
+    color: rgb(147, 64, 248);
+}
+
+.book-chapter-author
+{
+    display: flex;
+    justify-content: flex-end;
+    color: aquamarine;
+    width: 50.5rem;
+}
+
+.book-description
+{
+    margin-top: 2rem;
+    word-spacing: 3px;
+    line-height: 29px;
+    width: 50.5rem;
+}
+
+h6{
+    margin: 0.5rem 0rem;
+}
+h6:hover
+{
+    color: rgb(123, 255, 46);
+    transition: all 0.2s ease;
+}
